@@ -17,5 +17,6 @@ function enviarFormulario() {
 
     //Imprimir no console
     console.log(json)
+    console.log(infClientes.valueOf())
     alert("Cadastro realizado com sucesso!")
 }
