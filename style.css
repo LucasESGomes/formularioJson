@@ -12,9 +12,21 @@ body {
     height: 100vh;
     outline: none;
     overflow: hidden;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.842), rgba(0, 0, 0, 0.650)), url(/img/inside-out-2-5422x2160-17820.jpg);
+    background-image: url(/inside-out-2-5422x2160-17820.jpg);
     background-size: cover;
     background-position: center;
+}
+
+body::after {
+    content: '';
+    background: linear-gradient(rgba(0, 0, 0, 0.842), rgba(0, 0, 0, 0.650));
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100vw;
+    height: 100vh;
 }
 
 .container {
@@ -26,6 +38,7 @@ body {
     height: 750px;
     width: 700px;
     color: white;
+    z-index: 1000;
 }
 
 h1 {
